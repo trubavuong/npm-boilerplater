@@ -1,0 +1,39 @@
+{
+  "name": "npm-boilerplater",
+  "version": "0.0.1",
+  "description": "Boilerplate for coding, linting, testing, debugging and publishing npm module",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier-eslint --write \"src/**/*.js\"",
+    "lint": "eslint --fix \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we-code-now/npm-boilerplater.git"
+  },
+  "keywords": [
+    "npm",
+    "boilerplate",
+    "module",
+    "publish",
+    "react",
+    "jsx",
+    "eslint"
+  ],
+  "author": "Steven <steven@wecodenow.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/we-code-now/npm-boilerplater/issues"
+  },
+  "homepage": "https://github.com/we-code-now/npm-boilerplater#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
