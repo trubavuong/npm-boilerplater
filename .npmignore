@@ -63,5 +63,12 @@ package-lock.json
 # next.js build output
 .next
 
-# lib build output
-lib
+# project resources
+src
+.vscode
+.gitignore
+.editorconfig
+.eslintignore
+.eslintrc.js
+.travis.yml
+babel.config.js

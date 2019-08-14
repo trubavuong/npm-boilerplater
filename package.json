@@ -2,10 +2,13 @@
   "name": "npm-boilerplater",
   "version": "0.0.1",
   "description": "Boilerplate for coding, linting, testing, debugging and publishing npm module",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "format": "prettier-eslint --write \"src/**/*.js\"",
-    "lint": "eslint --fix \"src/**/*.js\"",
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "format": "prettier-eslint --list-different --write \"src/**/*.js\"",
+    "lint": "eslint --max-warnings=0 \"src/**/*.js\"",
+    "prepublish": "npm run clean && npm run format && npm run lint && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
@@ -15,8 +18,8 @@
   },
   "lint-staged": {
     "**/*.js": [
-      "eslint --fix",
-      "prettier-eslint --write",
+      "prettier-eslint --list-different --write",
+      "eslint --max-warnings=0",
       "git add"
     ]
   },
@@ -31,7 +34,8 @@
     "publish",
     "react",
     "jsx",
-    "eslint"
+    "eslint",
+    "prettier"
   ],
   "author": "Steven <steven@wecodenow.com>",
   "license": "MIT",
@@ -40,6 +44,9 @@
   },
   "homepage": "https://github.com/we-code-now/npm-boilerplater#readme",
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.0",
     "eslint-plugin-import": "^2.18.2",
@@ -48,6 +55,10 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^2.7.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
   }
 }
