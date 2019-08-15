@@ -8,7 +8,7 @@
     "clean": "rimraf lib",
     "format": "prettier-eslint --list-different --write \"src/**/*.js\"",
     "lint": "eslint --max-warnings=0 \"src/**/*.js\"",
-    "prepublish": "npm run clean && npm run format && npm run lint && npm run build",
+    "prepublishOnly": "npm run clean && npm run format && npm run lint && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
