@@ -9,7 +9,7 @@
     "cover": "npm run test -- --coverage",
     "cover:codacy": "npm run cover && cat ./coverage/lcov.info | codacy-coverage",
     "format": "prettier-eslint --list-different --write \"src/**/*.js\"",
-    "lint": "eslint --max-warnings=0 \"src/**/*.js\"",
+    "lint": "eslint --max-warnings=0 \"src/**/*.js\" && remark *.md --output",
     "prepublishOnly": "npm run clean && npm run format && npm run lint && npm run test && npm run build",
     "test": "jest --bail --verbose",
     "test:watch": "npm run test -- --watch"
@@ -24,6 +24,11 @@
       "prettier-eslint --list-different --write",
       "eslint --max-warnings=0",
       "git add"
+    ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
     ]
   },
   "repository": {
@@ -68,6 +73,8 @@
     "jest": "^24.8.0",
     "lint-staged": "^9.2.1",
     "prettier-eslint-cli": "^5.0.0",
+    "remark-cli": "^7.0.0",
+    "remark-preset-lint-recommended": "^3.0.3",
     "rimraf": "^2.7.0"
   },
   "dependencies": {
