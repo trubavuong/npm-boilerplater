@@ -1,6 +1,6 @@
 {
   "name": "npm-boilerplater",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Boilerplate for coding, linting, testing, debugging and publishing npm module",
   "main": "lib/index.js",
   "scripts": {
@@ -38,8 +38,7 @@
   "keywords": [
     "npm",
     "boilerplate",
-    "react",
-    "jsx",
+    "lint",
     "eslint",
     "prettier",
     "coverage",
@@ -47,7 +46,6 @@
     "ci",
     "travis",
     "jest",
-    "lint",
     "test",
     "debug",
     "publish"
