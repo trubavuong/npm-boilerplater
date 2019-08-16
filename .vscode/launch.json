@@ -7,40 +7,24 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Mocha All",
-      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+      "name": "Jest All",
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
       "env": {
         "NODE_ENV": "test"
       },
-      "args": [
-        "-b",
-        "--require",
-        "@babel/register",
-        "--timeout",
-        "999999",
-        "--colors",
-        "src/**/*.spec.js"
-      ],
+      "args": ["--bail", "--colors"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Mocha Current File",
-      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+      "name": "Jest Current File",
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
       "env": {
         "NODE_ENV": "test"
       },
-      "args": [
-        "-b",
-        "--require",
-        "@babel/register",
-        "--timeout",
-        "999999",
-        "--colors",
-        "${file}"
-      ],
+      "args": ["--bail", "--colors", "${file}"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
     }

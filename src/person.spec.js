@@ -1,5 +1,3 @@
-import { expect } from 'chai';
-
 import Person from './person';
 
 describe('person.js', () => {
@@ -8,7 +6,7 @@ describe('person.js', () => {
       it('should work', () => {
         const person = new Person('Steven');
         const greetingMessage = person.sayGreeting('Mary');
-        expect(greetingMessage).to.equal('Hello Mary! My name is Steven.');
+        expect(greetingMessage).toEqual('Hello Mary! My name is Steven.');
       });
     });
   });
