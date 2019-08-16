@@ -20,7 +20,7 @@ Create your next ES6 module in a wink!
 -   **Test** - [Jest](https://jestjs.io/) is a great Javascript testing framework with built-in assertion library, mocking, code coverage and more. Debug in Visual Studio Code is great!
 -   **CI** - [TravisCI](https://travis-ci.org/) will help you to test and deploy your project automatically.
 -   **Analysis** - [Codacy](https://www.codacy.com/) can analyze your code automatically and you can send code coverage metrics to it.
--   **Useful commands** - Run npm essential tasks can be easier.
+-   **Useful commands** - Run npm essential tasks can't be easier.
 -   **Highly customizable** - Easily to customize to fit your need.
 
 ## Quick start
@@ -51,6 +51,7 @@ $ git init
 ├── .travis.yml          # TravisCI config
 ├── jest.config.js       # Jest config
 ├── babel.config.js      # Babel config
+├── node_modules/
 ├── coverage/            # code coverage report in here
 ├── lib/                 # build destination
 │   └── index.js           # production code
