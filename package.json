@@ -6,10 +6,12 @@
   "scripts": {
     "build": "npm run clean && babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
     "clean": "rimraf lib",
+    "cover": "npm run test -- --coverage",
     "format": "prettier-eslint --list-different --write \"src/**/*.js\"",
     "lint": "eslint --max-warnings=0 \"src/**/*.js\"",
     "prepublishOnly": "npm run clean && npm run format && npm run lint && npm run build",
-    "test": "jest --bail --verbose"
+    "test": "jest --bail --verbose",
+    "test:watch": "npm run test -- --watch"
   },
   "husky": {
     "hooks": {
