@@ -1,10 +1,4 @@
 module.exports = (api) => {
-  const presets = [['@babel/env', { corejs: 3, useBuiltIns: 'usage' }]];
-
-  const envConfigs = {};
-  if (api.env('test')) {
-    envConfigs.retainLines = true;
-  }
-
-  return Object.assign({}, { presets }, envConfigs);
+  const envPreset = ['@babel/env', { corejs: 3, useBuiltIns: 'usage' }];
+  return (api.env('test') ? { retainLines: true, presets: [envPreset] } : { presets: [envPreset] });
 };
