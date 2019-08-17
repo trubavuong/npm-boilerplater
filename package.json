@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run clean && babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
-    "clean": "rimraf lib",
+    "clean": "rimraf lib coverage",
     "cover": "npm run test -- --coverage",
     "cover:codacy": "npm run cover && cat ./coverage/lcov.info | codacy-coverage",
     "format": "prettier-eslint --list-different --write \"src/**/*.js\"",

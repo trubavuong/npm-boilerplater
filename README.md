@@ -72,7 +72,7 @@ $ git init
 -   `npm run cover` - Run test with code coverage report
 -   `npm run cover:codacy` - Run test with code coverage report and send metrics to Codacy. Read [setup guide](https://support.codacy.com/hc/en-us/articles/207279819-Coverage).
 -   `npm run build` - Transpile ES6 code into ES5 from `src/` into `lib/`
--   `npm run clean` - Remove build directory destination `lib/`
+-   `npm run clean` - Remove `lib/` and `coverage/`
 -   `npm publish` - Publish package to [npm](https://www.npmjs.com/)
 
 ## License
