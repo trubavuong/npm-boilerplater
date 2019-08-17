@@ -20,6 +20,7 @@ Create your next ES6 module in a wink!
 -   **Test** - [Jest](https://jestjs.io/) is a great Javascript testing framework with built-in assertion library, mocking, code coverage and more. Debug in Visual Studio Code is great!
 -   **CI** - [TravisCI](https://travis-ci.org/) will help you to test and deploy your project automatically.
 -   **Analysis** - [Codacy](https://www.codacy.com/) can analyze your code automatically and you can send code coverage metrics to it.
+-   **Git-hooks** - [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) can work together to format files and avoid bad commit.
 -   **Useful commands** - Run npm essential tasks can't be easier.
 -   **Highly customizable** - Easily to customize to fit your need.
 
@@ -65,8 +66,8 @@ $ git init
 
 ## Commands
 
--   `npm run lint` - Lint code
--   `npm run format` - Format code
+-   `npm run lint` - Lint code and markdown
+-   `npm run format` - Format code and markdown
 -   `npm run test` - Run test
 -   `npm run test:watch` - Run test in watch mode
 -   `npm run cover` - Run test with code coverage report
