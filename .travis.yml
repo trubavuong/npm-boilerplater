@@ -14,4 +14,7 @@ branches:
     - master
 notifications:
   email:
-    - steven@wecodenow.com
+    recipients:
+      - 5902761+StevenTea@users.noreply.github.com
+    on_success: always
+    on_failure: always
