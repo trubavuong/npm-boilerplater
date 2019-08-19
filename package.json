@@ -74,8 +74,5 @@
     "remark-cli": "^7.0.0",
     "remark-preset-lint-recommended": "^3.0.3",
     "rimraf": "^2.7.0"
-  },
-  "dependencies": {
-    "core-js": "^3.2.1"
   }
 }
