@@ -59,6 +59,7 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "codacy-coverage": "^3.4.0",
     "eslint": "^6.1.0",
@@ -74,5 +75,8 @@
     "remark-cli": "^7.0.0",
     "remark-preset-lint-recommended": "^3.0.3",
     "rimraf": "^2.7.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5"
   }
 }
