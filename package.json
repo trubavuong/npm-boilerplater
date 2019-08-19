@@ -1,6 +1,6 @@
 {
   "name": "npm-boilerplater",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Boilerplate for coding, linting, testing, debugging and publishing npm module",
   "main": "lib/index.js",
   "scripts": {
