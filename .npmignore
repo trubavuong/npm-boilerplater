@@ -64,13 +64,12 @@ package-lock.json
 .next
 
 # project resources
-src
+src/**/*.spec.js
 .vscode
 .gitignore
 .editorconfig
 .eslintignore
 .eslintrc.js
 .travis.yml
-babel.config.js
 jest.config.js
 prettier.config.js
