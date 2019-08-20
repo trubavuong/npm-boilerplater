@@ -18,5 +18,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  rules: {},
+  rules: {
+    'arrow-parens': ['error', 'as-needed'],
+    'brace-style': ['error', 'stroustrup'],
+  },
 };
