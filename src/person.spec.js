@@ -15,7 +15,7 @@ describe('person.js', () => {
         const person = new Person('Steven');
         const finalMessage = await person.workInSeconds(5);
         expect(finalMessage).toEqual('I am Steven. I have done in 5 seconds.');
-      }, 10e3);
+      }, 10000);
     });
   });
 });
