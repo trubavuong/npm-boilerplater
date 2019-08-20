@@ -73,3 +73,4 @@ src
 .travis.yml
 babel.config.js
 jest.config.js
+prettier.config.js
