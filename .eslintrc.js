@@ -21,5 +21,6 @@ module.exports = {
   rules: {
     'arrow-parens': ['error', 'as-needed'],
     'brace-style': ['error', 'stroustrup'],
+    'object-curly-newline': ['error', { multiline: true, minProperties: 3 }],
   },
 };
