@@ -9,7 +9,7 @@
     "cover": "npm run test -- --coverage",
     "cover:codacy": "npm run cover && cat ./coverage/lcov.info | codacy-coverage",
     "format": "eslint --max-warnings=0 --fix \"src/**/*.js\" && remark *.md --output",
-    "lint": "eslint --max-warnings=0 \"src/**/*.js\" && remark *.md",
+    "lint": "eslint --max-warnings=0 \"src/**/*.js\" && remark -f *.md",
     "prepublishOnly": "npm run clean && npm run format && npm run lint && npm run test && npm run build",
     "test": "jest --bail --verbose",
     "test:watch": "npm run test -- --watch"
@@ -22,6 +22,9 @@
   "lint-staged": {
     "*.js": [
       "eslint --max-warnings=0"
+    ],
+    "*.md": [
+      "remark -f"
     ]
   },
   "remarkConfig": {
