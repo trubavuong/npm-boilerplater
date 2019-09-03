@@ -49,6 +49,7 @@ $ git init
 ├── .editorconfig        # EditorConfig config
 ├── .eslintrc.js         # Eslint config
 ├── .eslintignore
+├── .codacy.yml          # Codacy config
 ├── .travis.yml          # TravisCI config
 ├── jest.config.js       # Jest config
 ├── babel.config.js      # Babel config
